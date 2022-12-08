@@ -1,16 +1,34 @@
 #include "./../include/inspection_utilities.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include<string.h>
+#include<fcntl.h>
+#include<sys/stat.h>
 int main(int argc, char const *argv[])
 {
     // Utility variable to avoid trigger resize event on launch
     int first_resize = TRUE;
 
     // End-effector coordinates
-    float ee_x, ee_y;
+    float ee_x; 
+    float ee_y = 0.0;
 
     // Initialize User Interface 
     init_console_ui();
-
+    int fd_1, fd_2;
+    char* third_fifo = "/tmp/fifo3";
+    mkfifo(third_fifo, 0666);
+    char* fourth_fifo = "/tmp/fifo4";
+    mkfifo(fourth_fifo, 0666);
+    float vx = 0.0;
+    float vz = 0.0;
+    char arr1 [50];
+    char arr2[50] = "%f";
+    char arr3 [50];
+    char arr4[50] = "%f";
     // Infinite loop
     while(TRUE)
 	{	
@@ -53,25 +71,15 @@ int main(int argc, char const *argv[])
                 }
             }
         }
-        
-        // To be commented in final version...
-        switch (cmd)
-        {
-            case KEY_LEFT:
-                ee_x--;
-                break;
-            case KEY_RIGHT:
-                ee_x++;
-                break;
-            case KEY_UP:
-                ee_y--;
-                break;
-            case KEY_DOWN:
-                ee_y++;
-                break;
-            default:
-                break;
-        }
+       /* fd_1 = open(third_fifo, O_RDONLY);
+        read(fd_1, arr1, 50);
+        sscanf(arr1, arr2 , &ee_x);
+        close(fd_1);*/
+
+        fd_2 = open(fourth_fifo, O_RDONLY);
+        read(fd_2, arr3, 50);
+        sscanf(arr3, arr4 , &ee_y);
+        close(fd_2);
         
         // Update UI
         update_console_ui(&ee_x, &ee_y);
