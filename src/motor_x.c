@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -22,11 +21,14 @@ int main(int argc, char const *argv[])
     char arr1 [50];
     char arr2[50] = "%f";
     while((1)){
+    usleep(20000);
     fd_1 = open(first_fifo, O_RDONLY);
     read(fd_1, vx, 50);
     sscanf(vx, arr2 , &vxx);
     close(fd_1);
+    if(position>=(-5.9) && position<=50.9){
     position  = position + dt*vxx;
+    }
     printf("Position, %f\n", position);
     fd_3 = open(third_fifo, O_WRONLY);
     fflush(stdout);

@@ -28,18 +28,18 @@ int main(int argc, char const *argv[])
     // Infinite loop
     while(TRUE)
 	{	
-        /*fd_1 = open(first_fifo, O_WRONLY);
+        fd_1 = open(first_fifo, O_WRONLY);
             fflush(stdout);
             sprintf(arr1, "%f", vx );
             write(fd_1,arr1,strlen(arr1 +1));
             close(fd_1);
-            usleep(50000);*/
+            usleep(20000);
             fd_2 = open(second_fifo, O_WRONLY);
             fflush(stdout);
             sprintf(arr2, "%f", vz );
             write(fd_2,arr2,strlen(arr2 +1));
             close(fd_2);
-            usleep(50000);
+            usleep(20000);
         // Get mouse/resize commands in non-blocking mode...
         int cmd = getch();
 
@@ -60,40 +60,42 @@ int main(int argc, char const *argv[])
 
                 // Vx++ button pressed
                 if(check_button_pressed(vx_incr_btn, &event)) {
+                    
                     vx = vx  + 0.1;
-                    usleep(5000);
+                    
                 }
 
                 // Vx-- button pressed
                 else if(check_button_pressed(vx_decr_btn, &event)) {
                   vx = vx  - 0.1;
-                  usleep(5000);
+                  
                 }
 
                 // Vx stop button pressed
                 else if(check_button_pressed(vx_stp_button, &event)) {
                 vx = 0.0;
-                usleep(5000);
                 }
 
                 // Vz++ button pressed
                 else if(check_button_pressed(vz_incr_btn, &event)) {
+                
                    vz = vz  + 0.1;
-                   usleep(5000);
+                
                     
                 }
 
                 // Vz-- button pressed
                 else if(check_button_pressed(vz_decr_btn, &event)) {
+                
                     vz = vz  - 0.1;
-                    usleep(5000);
+                    
                    
                 }
 
                 // Vz stop button pressed
                 else if(check_button_pressed(vz_stp_button, &event)) {
                     vz = 0.0;
-                    usleep(5000);
+                    
                     
                 }
             }

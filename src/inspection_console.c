@@ -13,22 +13,26 @@ int main(int argc, char const *argv[])
     int first_resize = TRUE;
 
     // End-effector coordinates
-    float ee_x; 
+    float ee_x = 0.0; 
     float ee_y = 0.0;
 
     // Initialize User Interface 
     init_console_ui();
-    int fd_1, fd_2;
+    int fd_1, fd_2, fd_3;
     char* third_fifo = "/tmp/fifo3";
     mkfifo(third_fifo, 0666);
     char* fourth_fifo = "/tmp/fifo4";
     mkfifo(fourth_fifo, 0666);
+    char *fifth_fifo = "/tmp/fifo5";
+    mkfifo(fifth_fifo,0666);
     float vx = 0.0;
     float vz = 0.0;
     char arr1 [50];
     char arr2[50] = "%f";
     char arr3 [50];
     char arr4[50] = "%f";
+    char arr5[50];
+    char arr6[50] = "%f,%f";
     // Infinite loop
     while(TRUE)
 	{	
@@ -76,10 +80,16 @@ int main(int argc, char const *argv[])
         sscanf(arr1, arr2 , &ee_x);
         close(fd_1);*/
 
-        fd_2 = open(fourth_fifo, O_RDONLY);
+        /*fd_2 = open(fourth_fifo, O_RDONLY);
         read(fd_2, arr3, 50);
         sscanf(arr3, arr4 , &ee_y);
-        close(fd_2);
+        close(fd_2);*/
+
+        fd_3 = open(fifth_fifo, O_RDONLY);
+        read(fd_3, arr5 , 50);
+        sscanf(arr5, arr6 ,&ee_x, &ee_y);
+        close(fd_3);
+
         
         // Update UI
         update_console_ui(&ee_x, &ee_y);

@@ -20,10 +20,12 @@ int main(int argc, char const *argv[])
     char arr1 [50];
     char arr2[50] = "%f";
     while((1)){
+    usleep(20000);
    fd_2 = open(second_fifo, O_RDONLY);
     read(fd_2, vz, 50);
     sscanf(vz, arr2 , &vzz);
     close(fd_2);
+    if(position>=(-5.9) && position<=15.9)
     position  = position + dt*vzz;
     printf("Position, %f\n", position);
     fd_4 = open(fourth_fifo, O_WRONLY);
