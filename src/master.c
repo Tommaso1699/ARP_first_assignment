@@ -33,11 +33,18 @@ int main() {
   pid_t pid_cmd = spawn("/usr/bin/konsole", arg_list_command);
   pid_t pid_insp = spawn("/usr/bin/konsole", arg_list_inspection);
 
+  char* inspection="/tmp/inspection";
+  mkfifo(inspection,0666);
+
   int status;
   waitpid(pid_cmd, &status, 0);
   waitpid(pid_insp, &status, 0);
   
   printf ("Main program exiting with status %d\n", status);
   return 0;
+
+
+  unlink(inspection);
+
 }
 

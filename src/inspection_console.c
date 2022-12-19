@@ -8,8 +8,23 @@ int main(int argc, char const *argv[])
     // End-effector coordinates
     float ee_x, ee_y;
 
+    int fd, fd_x, fd_z;
+    int get_pid;
+    char pid_buf[BUFFSIZE];
+    char* motor_x_real = "tmp/motor_x_real";
+    char* motor_z_real = "tmp/motor_z_real";
+    char* inspection = "tmp/inspection";
+
     // Initialize User Interface 
     init_console_ui();
+    fd = open(inspection, O_WRONLY);
+    if(fd == -1){
+        perror("Inspection error");
+    }
+    get_pid = getpid();
+	sprintf(pid_buf, "%d", get_pid);
+	write(fd,pid_buf, strlen(pid_buf)+1);
+	close(fd);
 
     // Infinite loop
     while(TRUE)
