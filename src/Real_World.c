@@ -13,12 +13,13 @@ int generate_random(int l, int r)
 }
 int main(int argc, char const *argv[])
 {
-char *myfifo = "/tmp/fifo3";
-mkfifo(myfifo,0666);
-char *myfifo2 = "/tmp/fifo4";
-mkfifo(myfifo2,0666);
-char *myfifo3 = "/tmp/fifo5";
-mkfifo(myfifo3,0666);
+char *motor_x = "/tmp/fifo_motor_x_to_switching_motor_signals";
+mkfifo(motor_x,0666);
+char *motor_z = "/tmp/fifo_motor_z_to_switching_motor_signals";
+mkfifo(motor_z,0666);
+char *updateui = "/tmp/update_ui";
+mkfifo(updateui,0666);
+int motorx, motorz, update_ui;
 char vel[80];
 char px[80];
 char py[80];
@@ -32,20 +33,15 @@ float vx = 0;
 while(1){
     usleep(20000);
     fd_set fds;
-    struct timeval tv;
     int maxfd;
     int res;
-    int retval,m,n;
-    char buf[256];
-    int fd1 = open(myfifo, O_RDWR);
-    int fd2 = open(myfifo2, O_RDWR);
-    int fd3;
+    int retval;
+    motorx = open(motor_x, O_RDWR);
+    motorz = open(motor_z, O_RDWR);
     FD_ZERO(&fds);
-    FD_SET(fd1, &fds);
-    FD_SET(fd2, &fds);
-    tv.tv_sec = 0.1;
-    tv.tv_usec =0;
-    maxfd = fd1>fd2?fd1:fd2;
+    FD_SET(motorx, &fds);
+    FD_SET(motorz, &fds);
+    maxfd = motorx>motorz?motorx:motorz;
     retval  = select(maxfd +1, &fds, NULL, NULL, NULL);
     switch(retval){
         case -1:
@@ -55,36 +51,36 @@ while(1){
         fflush(stdout);
         int rand_num = generate_random(0,1);
         if(rand_num ==0){
-            read(fd1,px,80);
+            read(motorx,px,80);
             sscanf(px,format_string,&posx);
-            close(fd1);
-            close(fd2);
+            close(motorx);
+            close(motorz);
 
         }
         else{
-            read(fd2,py,80);
+            read(motorz,py,80);
             sscanf(py,format_string,&posy);
-            close(fd1);
-            close(fd2);
+            close(motorx);
+            close(motorz);
         }
         break;
 
         case 1:
         fflush(stdout);
-        if(FD_ISSET(fd1,&fds)!=0){
+        if(FD_ISSET(motorx,&fds)!=0){
             fflush(stdout);
-            res = read(fd1,px,80);
+            res = read(motorx,px,80);
             sscanf(px,format_string,&posx);
-            close(fd1);
-            close(fd2);
+            close(motorx);
+            close(motorz);
 
         }
-        else if(FD_ISSET(fd2,&fds)!=0){
+        else if(FD_ISSET(motorz,&fds)!=0){
             fflush(stdout);
-            res = read(fd2,py,80);
+            res = read(motorz,py,80);
             sscanf(py,format_string,&posy);
-            close(fd1);
-            close(fd2);
+            close(motorx);
+            close(motorz);
 
         }
         break;
@@ -92,10 +88,10 @@ while(1){
 
     }
     printf("posx:%f,posy:%f\n", posx, posy);
-    fd3 = open(myfifo3,O_RDWR);
+    update_ui = open(updateui,O_RDWR);
     sprintf(realpos, "%f,%f", posx, posy);
-    write(fd3, realpos, strlen(realpos)+1);
-    close(fd3);
+    write(update_ui, realpos, strlen(realpos)+1);
+    close(update_ui);
 
 
 }   

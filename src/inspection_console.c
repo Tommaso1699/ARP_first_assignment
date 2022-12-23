@@ -7,32 +7,72 @@
 #include<string.h>
 #include<fcntl.h>
 #include<sys/stat.h>
+#include<signal.h>
+float ee_x = 0.0;
+float ee_y = 0.0;
+void stop(int signo1)
+{
+    if (signo1 == SIGUSR1)
+    {
+        // printf("Signal received, exiting");
+        fflush(stdout);
+        char line[10];
+        FILE *cmd = popen("pidof -s command", "r");
+        fgets(line, 10, cmd);
+        long pid = 0;
+        pid = strtoul(line, NULL, 10);
+
+        kill(pid, SIGUSR1);
+    }
+}
+void reset(int signo2)
+{
+    if (signo2 == SIGUSR1)
+    {
+        // printf("Signal received, exiting");
+        fflush(stdout);
+        char line1[10];
+        char line2[10];
+        FILE *cmd1 = popen("pidof -s motor_x", "r");
+        FILE *cmd2 = popen("pidof -s motor_z", "r");
+        fgets(line1, 10, cmd1);
+        fgets(line2, 10, cmd2);
+        long pid1 = 0;
+        long pid2 = 0;
+        pid1 = strtoul(line1, NULL, 10);
+        pid2 = strtoul(line2, NULL, 10);
+        ee_x = 0.0;
+        ee_y = 0.0;
+        update_console_ui(&ee_x, &ee_y);
+        kill(pid1, SIGUSR1);
+        kill(pid2, SIGUSR1);
+    }
+}
 int main(int argc, char const *argv[])
 {
     // Utility variable to avoid trigger resize event on launch
     int first_resize = TRUE;
 
     // End-effector coordinates
-    float ee_x = 0.0; 
-    float ee_y = 0.0;
 
     // Initialize User Interface 
     init_console_ui();
-    int fd_1, fd_2, fd_3;
-    char* third_fifo = "/tmp/fifo3";
-    mkfifo(third_fifo, 0666);
-    char* fourth_fifo = "/tmp/fifo4";
-    mkfifo(fourth_fifo, 0666);
-    char *fifth_fifo = "/tmp/fifo5";
-    mkfifo(fifth_fifo,0666);
+    int updateui;
+    char *update_ui = "/tmp/update_ui";
+    mkfifo(update_ui,0666);
     float vx = 0.0;
     float vz = 0.0;
     char arr1 [50];
-    char arr2[50] = "%f";
+    char arr2[50] = "";
     char arr3 [50];
     char arr4[50] = "%f";
     char arr5[50];
     char arr6[50] = "%f,%f";
+    int motor_x, motor_z;
+    char* motor_x_fifo = "/tmp/fifo_motor_x";
+    char* motor_z_fifo = "/tmp/fifo_motor_z";
+    mkfifo(motor_x_fifo, 0666);
+    mkfifo(motor_z_fifo, 0666);
     // Infinite loop
     while(TRUE)
 	{	
@@ -56,39 +96,25 @@ int main(int argc, char const *argv[])
 
                 // STOP button pressed
                 if(check_button_pressed(stp_button, &event)) {
-                    mvprintw(LINES - 1, 1, "STP button pressed");
-                    refresh();
-                    sleep(1);
-                    for(int j = 0; j < COLS; j++) {
-                        mvaddch(LINES - 1, j, ' ');
-                    }
+                 if (signal(SIGUSR1, stop) == SIG_ERR)
+                        printf("\ncan't catch SIGINT\n");
+                    // signal(SIGUSR1, Handle);
+                    kill(getpid(), SIGUSR1);
                 }
 
                 // RESET button pressed
                 else if(check_button_pressed(rst_button, &event)) {
-                    mvprintw(LINES - 1, 1, "RST button pressed");
-                    refresh();
-                    sleep(1);
-                    for(int j = 0; j < COLS; j++) {
-                        mvaddch(LINES - 1, j, ' ');
-                    }
+                       if (signal(SIGUSR1, reset) == SIG_ERR)
+                        printf("\ncan't catch SIGINT\n");
+                    kill(getpid(), SIGUSR1);
+                    
                 }
             }
         }
-       /* fd_1 = open(third_fifo, O_RDONLY);
-        read(fd_1, arr1, 50);
-        sscanf(arr1, arr2 , &ee_x);
-        close(fd_1);*/
-
-        /*fd_2 = open(fourth_fifo, O_RDONLY);
-        read(fd_2, arr3, 50);
-        sscanf(arr3, arr4 , &ee_y);
-        close(fd_2);*/
-
-        fd_3 = open(fifth_fifo, O_RDONLY);
-        read(fd_3, arr5 , 50);
+        updateui = open(update_ui, O_RDONLY);
+        read(updateui, arr5 , 50);
         sscanf(arr5, arr6 ,&ee_x, &ee_y);
-        close(fd_3);
+        close(updateui);
 
         
         // Update UI

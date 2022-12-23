@@ -8,31 +8,42 @@
 #include<sys/stat.h>
 int main(int argc, char const *argv[])
 {
-    char vz [50] ;
-    float vzz = 0.0;
-    float position =0.0;
-    float dt =  0.25;
-    int fd_2, fd_4;
-    char* second_fifo = "/tmp/fifo2";
-    char* fourth_fifo = "/tmp/fifo4";
-    mkfifo(second_fifo, 0666);
-    mkfifo(fourth_fifo, 0666);
-    char arr1 [50];
-    char arr2[50] = "%f";
-    while((1)){
-    usleep(20000);
-   fd_2 = open(second_fifo, O_RDONLY);
-    read(fd_2, vz, 50);
-    sscanf(vz, arr2 , &vzz);
-    close(fd_2);
-    if(position>=(-5.9) && position<=15.9)
-    position  = position + dt*vzz;
-    printf("Position, %f\n", position);
-    fd_4 = open(fourth_fifo, O_WRONLY);
+    FILE *motorz; //creating variable
+    //motorz = fopen("motor_z.log", "w"); //creating log file
+    //fprintf(motorz,"PID of process: %d\n", getpid()); //writing to log file
+    //fflush(motorz); //write all of the buffered data to it's destination
+    //fclose(motorz); //closing log file
+    char vz [50] ; //creating array
+    float vzz = 0.0; //creating variable
+    float position =0.0; //creating variable
+    float dt =  0.25; //creating variable
+    int motor_z_1, motor_z_2; //creating variable
+    char* motor_z_fifo = "/tmp/fifo_motor_z"; //creating variable
+    char* switch_motor_signals_fifo = "/tmp/fifo_motor_z_to_switching_motor_signals"; //creating variable
+    mkfifo(motor_z_fifo, 0666); //making a FIFO special file
+    mkfifo(switch_motor_signals_fifo, 0666); //making a FIFO special file
+    char arr1 [50]; //creating array
+    char arr2[50] = "%f"; //creating array
+    while((1)){ //while loop
+    usleep(20000); //suspend execution for microsecond intervals
+    motor_z_1= open(motor_z_fifo, O_RDONLY); //opening FIFO
+    read(motor_z_1, vz, 50); //read to buffer
+    sscanf(vz, arr2 , &vzz); // read formatted input
+    close(motor_z_1); //closing FIFO
+    if(position>=(-5.9) && position<=15.9) //constraints on x axis
+    { 
+    position  = position + dt*vzz; //computing position
+    //motorz = fopen("motor_z.log", "a");
+    //fprintf(motorz, "Position, %f\n", position);
+    //fflush(motorz);
+    //fclose(motorz);
+    }
+    //?
+    motor_z_2 = open(switch_motor_signals_fifo, O_WRONLY);
     fflush(stdout);
     sprintf(arr1, "%f", position );
-    write(fd_4,arr1,strlen(arr1 +1));
-    close(fd_4);
+    write(motor_z_2,arr1,strlen(arr1 +1));
+    close(motor_z_2);
     }
     return 0;
 }
