@@ -4,6 +4,7 @@
 #include <math.h>
 #include <time.h>
 #include <stdlib.h>
+#include <fcntl.h>
 
 typedef struct {
 	chtype 	ls, rs, ts, bs, 

@@ -1,5 +1,7 @@
 #include "./../include/inspection_utilities.h"
 
+#define BUFFSIZE 100
+
 int main(int argc, char const *argv[])
 {
     // Utility variable to avoid trigger resize event on launch
