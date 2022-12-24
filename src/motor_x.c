@@ -17,6 +17,17 @@ void reset(int signo){
     }
 }
 
+int logging(char* log)
+{
+    char array[200];
+    char *inspection = "/tmp/inspection";
+    int fd_log = open(inspection, O_WRONLY);
+    memset(array, 0, sizeof(array));
+    sprintf(array, "%ld; %d; %s\n", time(NULL), getpid(), log);
+    write(fd_log, array, strlen(array));
+    close(fd_log);
+}
+
 int main(int argc, char const *argv[])
 {
     FILE *motorx;                       // creating variable
@@ -30,8 +41,8 @@ int main(int argc, char const *argv[])
     int motor_x_1, motor_x_2;                  // creating variable
     char *motor_x_fifo = "/tmp/fifo_motor_x"; // creating variable
     char *switch_motor_signals_fifo = "/tmp/fifo_motor_x_to_switching_motor_signals"; // creating variable
-    mkfifo(motor_x_fifo, 0666);        // making a FIFO special file
-    mkfifo(switch_motor_signals_fifo, 0666);        // making a FIFO special file
+    //mkfifo(motor_x_fifo, 0666);        // making a FIFO special file
+    //mkfifo(switch_motor_signals_fifo, 0666);        // making a FIFO special file
     char arr1[50];                   // creating array
     char arr2[50] = "%f";            // creating array
     if (signal(SIGUSR2, reset) == SIG_ERR)
@@ -65,15 +76,17 @@ int main(int argc, char const *argv[])
             speed_x=0.0;
         }
 
-        printf("Position, %f\n", position);
+        //printf("Position, %f\n", position);
         //?
         motor_x_2 = open(switch_motor_signals_fifo, O_WRONLY); // opening FIFO
         fflush(stdout);                    // write all of the buffered data to it's destination
         sprintf(arr1, "%f", position);
         write(motor_x_2, arr1, strlen(arr1 + 1));
         close(motor_x_2); // closing FIFO
+        logging("motor_x");
         usleep(20000);
     }
-    
+    unlink(switch_motor_signals_fifo);
+    unlink(motor_x_fifo);
     return 0;
 }

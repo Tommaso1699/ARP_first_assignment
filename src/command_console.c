@@ -8,14 +8,18 @@
 #include<fcntl.h>
 #include<sys/stat.h>
 #include<signal.h>
+#include <time.h>
+
 float number_x =0.0;
 float number_z =0.0;
+
 void stop(int signo){
     if(signo==SIGUSR1){
        number_x = 3.0;
        number_z = 3.0;
     }
 }
+
 void reset(int signo){
     if(signo==SIGUSR2){
        
@@ -23,6 +27,18 @@ void reset(int signo){
        number_z = 2.0;
     }
 }
+
+int logging(char* log)
+{
+    char array[200];
+    char *inspection = "/tmp/inspection";
+    int fd_log = open(inspection, O_WRONLY);
+    memset(array, 0, sizeof(array));
+    sprintf(array, "%ld; %d; %s\n", time(NULL), getpid(), log);
+    write(fd_log, array, strlen(array));
+    close(fd_log);
+}
+
 int main(int argc, char const *argv[])
 {
     FILE *command_console; // creating variable
@@ -145,6 +161,7 @@ int main(int argc, char const *argv[])
         refresh();
     }
     // Terminate
+    logging(" command ");
     endwin();
     return 0;
 }

@@ -6,6 +6,8 @@
 #include<string.h>
 #include<fcntl.h>
 #include<sys/stat.h>
+#include <time.h>
+
 float position =0.0;
 float vzz = 0.0; 
 float dt = 0.025;
@@ -15,6 +17,18 @@ void reset(int signo){
       speed_z = 0.0;
     }
 }
+
+int logging(char* log)
+{
+    char array[200];
+    char *inspection = "/tmp/inspection";
+    int fd_log = open(inspection, O_WRONLY);
+    memset(array, 0, sizeof(array));
+    sprintf(array, "%ld; %d; %s\n", time(NULL), getpid(), log);
+    write(fd_log, array, strlen(array));
+    close(fd_log);
+}
+
 int main(int argc, char const *argv[])
 {
     FILE *motorz; //creating variable
@@ -28,8 +42,8 @@ int main(int argc, char const *argv[])
     int motor_z_1, motor_z_2; //creating variable
     char* motor_z_fifo = "/tmp/fifo_motor_z"; //creating variable
     char* switch_motor_signals_fifo = "/tmp/fifo_motor_z_to_switching_motor_signals"; //creating variable
-    mkfifo(motor_z_fifo, 0666); //making a FIFO special file
-    mkfifo(switch_motor_signals_fifo, 0666); //making a FIFO special file
+    //mkfifo(motor_z_fifo, 0666); //making a FIFO special file
+    //mkfifo(switch_motor_signals_fifo, 0666); //making a FIFO special file
     char arr1 [50]; //creating array
     char arr2[50] = "%f"; //creating array
      if (signal(SIGUSR2, reset) == SIG_ERR)
@@ -67,7 +81,10 @@ int main(int argc, char const *argv[])
     sprintf(arr1, "%f", position );
     write(motor_z_2,arr1,strlen(arr1 +1));
     close(motor_z_2);
+    logging("motor_z");
     usleep(20000);
     }
+    unlink(switch_motor_signals_fifo);
+    unlink(motor_z_fifo);
     return 0;
 }
