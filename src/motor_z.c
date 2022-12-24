@@ -7,10 +7,12 @@
 #include<fcntl.h>
 #include<sys/stat.h>
 float position =0.0;
-int flag =0;
+float vzz = 0.0; 
+float dt = 0.025;
+float speed_z =0.0;
 void reset(int signo){
     if(signo==SIGUSR2){
-       flag =1;
+      speed_z = 0.0;
     }
 }
 int main(int argc, char const *argv[])
@@ -23,7 +25,6 @@ int main(int argc, char const *argv[])
     char vz [50] ; //creating array
     float vzz = 0.0; //creating variable
      //creating variable
-    float dt =  0.25; //creating variable
     int motor_z_1, motor_z_2; //creating variable
     char* motor_z_fifo = "/tmp/fifo_motor_z"; //creating variable
     char* switch_motor_signals_fifo = "/tmp/fifo_motor_z_to_switching_motor_signals"; //creating variable
@@ -34,25 +35,39 @@ int main(int argc, char const *argv[])
      if (signal(SIGUSR2, reset) == SIG_ERR)
         printf("\ncan't catch SIGINT\n");
     while((1)){ //while loop
-    usleep(20000); //suspend execution for microsecond intervals
-    motor_z_1= open(motor_z_fifo, O_RDONLY); //opening FIFO
-    read(motor_z_1, vz, 50); //read to buffer
-    sscanf(vz, arr2 , &vzz); // read formatted input
-    close(motor_z_1); //closing FIFO
-    if(position>=(-5.9) && position<=15.9) //constraints on x axis
-    { 
-    position  = position + dt*vzz; //computing position
-    //motorz = fopen("motor_z.log", "a");
-    //fprintf(motorz, "Position, %f\n", position);
-    //fflush(motorz);
-    //fclose(motorz);
-    }
+     usleep(20000);                     // suspend execution for microsecond intervals
+        motor_z_1 = open(motor_z_fifo, O_RDONLY); // opening FIFO
+        read(motor_z_1, vz, 50);                // read to buffer
+        sscanf(vz, arr2, &vzz);            // read formatted input
+        close(motor_z_1);                // closing FIFO
+
+        if(vzz ==1){
+            speed_z = speed_z +0.005;
+        }
+        if(vzz==2){
+            speed_z = speed_z -0.005;
+        }
+        if(vzz==3){
+            speed_z = 0.0;
+        }
+        if(position>=0.0 && position<=9.0){
+        position = position + dt * speed_z;
+        }
+        if(position<=0){
+            position =0.0;
+            speed_z=0.0;
+        }
+        if(position>=9){
+            position =9.0;
+            speed_z=0.0;
+        }
     //?
     motor_z_2 = open(switch_motor_signals_fifo, O_WRONLY);
     fflush(stdout);
     sprintf(arr1, "%f", position );
     write(motor_z_2,arr1,strlen(arr1 +1));
     close(motor_z_2);
+    usleep(20000);
     }
     return 0;
 }
