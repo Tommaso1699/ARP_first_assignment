@@ -6,6 +6,7 @@
 #include <string.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+
 float position = 0.0;
 float vxx = 0.0; 
 float dt = 0.25;
@@ -15,6 +16,7 @@ void reset(int signo){
        flag =1;
     }
 }
+
 int main(int argc, char const *argv[])
 {
     FILE *motorx;                       // creating variable
