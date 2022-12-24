@@ -9,11 +9,11 @@
 
 float position = 0.0;
 float vxx = 0.0; 
-float dt = 0.25;
-int flag =0;
+float dt = 0.025;
+float speed_x =0.0;
 void reset(int signo){
     if(signo==SIGUSR2){
-       flag =1;
+       speed_x =0.0;
     }
 }
 
@@ -43,13 +43,26 @@ int main(int argc, char const *argv[])
         read(motor_x_1, vx, 50);                // read to buffer
         sscanf(vx, arr2, &vxx);            // read formatted input
         close(motor_x_1);                // closing FIFO
-        if (position >= (-5.9) && position <= 50.9)
-        {                                   // constraints on x axis
-            position = position + dt * vxx; // computing position
-           // motorx = fopen("motor_x.log", "a");
-            // fprintf(motorx, "Position, %f\n", position);
-            // fflush(motorx);
-            // fclose(motorx);
+
+        if(vxx ==1){
+            speed_x = speed_x +0.005;
+        }
+        if(vxx==2){
+            speed_x = speed_x -0.005;
+        }
+        if(vxx==3){
+            speed_x = 0.0;
+        }
+        if(position>=0.0 && position<=40.0){
+        position = position + dt * speed_x;
+        }
+        if(position<=0){
+            position =0.0;
+            speed_x=0.0;
+        }
+        if(position>=40){
+            position =40.0;
+            speed_x=0.0;
         }
 
         printf("Position, %f\n", position);
@@ -59,6 +72,7 @@ int main(int argc, char const *argv[])
         sprintf(arr1, "%f", position);
         write(motor_x_2, arr1, strlen(arr1 + 1));
         close(motor_x_2); // closing FIFO
+        usleep(20000);
     }
     
     return 0;

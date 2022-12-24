@@ -4,28 +4,23 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/wait.h>
-#include <string.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <signal.h>
-float vx = 0.0;
-float vz = 0.0;
-int flag = 0;
-// void stop(int signo){
-//  if(signo==SIGUSR1){
-//       fflush(stdout);
-//    vx = 0.0;
-//     vz = 0.0;
-// }
-//}
-void reset(int signo)
-{
-    if (signo == SIGUSR2)
-    {
-        fflush(stdout);
-        vx = 0.0;
-        vz = 0.0;
-        flag = 1;
+#include<string.h>
+#include<fcntl.h>
+#include<sys/stat.h>
+#include<signal.h>
+float number_x =0.0;
+float number_z =0.0;
+void stop(int signo){
+    if(signo==SIGUSR1){
+       number_x = 3.0;
+       number_z = 3.0;
+    }
+}
+void reset(int signo){
+    if(signo==SIGUSR2){
+       
+       number_x = 2.0;
+       number_z = 2.0;
     }
 }
 int main(int argc, char const *argv[])
@@ -49,26 +44,23 @@ int main(int argc, char const *argv[])
     init_console_ui();
     if (signal(SIGUSR2, reset) == SIG_ERR)
         printf("\ncan't catch SIGINT\n");
+        if (signal(SIGUSR1, stop) == SIG_ERR)
+        printf("\ncan't catch SIGINT\n");
     // Infinite loop
     while (TRUE)
     {
         motor_x = open(motor_x_fifo, O_WRONLY);
-        fflush(stdout);
-        sprintf(arr1, "%f", vx);
-        write(motor_x, arr1, strlen(arr1 + 1));
-        close(motor_x);
-        usleep(20000);
-        motor_z = open(motor_z_fifo, O_WRONLY);
-        fflush(stdout);
-        sprintf(arr2, "%f", vz);
-        write(motor_z, arr2, strlen(arr2 + 1));
-        close(motor_z);
-        usleep(20000);
-        if (flag == 1)
-        {
-            vx = vx - 0.1;
-            vz = vz - 0.1;
-        }
+            fflush(stdout);
+            sprintf(arr1, "%f", number_x );
+            write(motor_x,arr1,strlen(arr1 +1));
+            close(motor_x);
+            usleep(20000);
+            motor_z = open(motor_z_fifo, O_WRONLY);
+            fflush(stdout);
+            sprintf(arr2, "%f", number_z );
+            write(motor_z,arr2,strlen(arr2 +1));
+            close(motor_z);
+            usleep(20000);
         // Get mouse/resize commands in non-blocking mode...
         int cmd = getch();
         // If user resizes screen, re-draw UI
@@ -91,60 +83,61 @@ int main(int argc, char const *argv[])
             if (getmouse(&event) == OK)
             {
                 // Vx++ button pressed
-                if (check_button_pressed(vx_incr_btn, &event))
-                {
-
-                    vx = vx + 0.1;
-                    // fprintf(command_console, "Vx increase button pressed\n");
-                    // fflush(command_console);
-                    // fclose(command_console);
+                if(check_button_pressed(vx_incr_btn, &event)) {
+                    
+                   number_x = 1.0;
+                   // fprintf(command_console, "Vx increase button pressed\n");
+                   // fflush(command_console);
+                    //fclose(command_console);
+                    
                 }
 
                 // Vx-- button pressed
-                else if (check_button_pressed(vx_decr_btn, &event))
-                {
-                    vx = vx - 0.1;
-                    // fprintf(command_console, "Vx decrease button pressed\n");
-                    // fflush(command_console);
-                    // fclose(command_console);
+                else if(check_button_pressed(vx_decr_btn, &event)) {
+                  number_x = 2.0;
+                  //fprintf(command_console, "Vx decrease button pressed\n");
+                  //fflush(command_console);
+                  //fclose(command_console);
+                  
                 }
 
                 // Vx stop button pressed
-                else if (check_button_pressed(vx_stp_button, &event))
-                {
-                    vx = 0.0;
-                    // fprintf(command_console, "Vx stop button pressed\n");
-                    // fflush(command_console);
-                    // fclose(command_console);
+                else if(check_button_pressed(vx_stp_button, &event)) {
+               number_x = 3.0;
+               // fprintf(command_console, "Vx stop button pressed\n");
+               // fflush(command_console);
+                //fclose(command_console);
                 }
 
                 // Vz++ button pressed
-                else if (check_button_pressed(vz_incr_btn, &event))
-                {
-
-                    vz = vz + 0.1;
-                    // fprintf(command_console, "Vz increase button pressed\n");
-                    // fflush(command_console);
-                    // fclose(command_console);
+                else if(check_button_pressed(vz_incr_btn, &event)) {
+                
+                   number_z = 1.0;
+                   //fprintf(command_console, "Vz increase button pressed\n");
+                   //fflush(command_console);
+                  // fclose(command_console);
+                    
                 }
 
                 // Vz-- button pressed
-                else if (check_button_pressed(vz_decr_btn, &event))
-                {
-
-                    vz = vz - 0.1;
-                    // fprintf(command_console, "Vz decrease button pressed\n");
-                    // fflush(command_console);
-                    // fclose(command_console);
+                else if(check_button_pressed(vz_decr_btn, &event)) {
+                
+                    number_z = 2.0;
+                    //fprintf(command_console, "Vz decrease button pressed\n");
+                   // fflush(command_console);
+                   // fclose(command_console);
+                    
+                   
                 }
 
                 // Vz stop button pressed
-                else if (check_button_pressed(vz_stp_button, &event))
-                {
-                    vz = 0.0;
-                    // fprintf(command_console, "Vz stop button pressed\n");
-                    // fflush(command_console);
-                    // fclose(command_console);
+                else if(check_button_pressed(vz_stp_button, &event)) {
+                    number_z = 3.0;
+                   // fprintf(command_console, "Vz stop button pressed\n");
+                    //fflush(command_console);
+                   // fclose(command_console);
+                    
+                    
                 }
             }
         }

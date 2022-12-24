@@ -26,8 +26,12 @@ void stop(int signo1)
 {
     if (signo1 == SIGUSR1)
     {
-        fflush(stdout);
-        kill(interrupt("command"), SIGUSR1);
+        char line1[10];
+        FILE *cmd1 = popen("pidof -s command", "r");
+        fgets(line1, 10, cmd1);
+        long pid1 = 0;
+        pid1 = strtoul(line1, NULL, 10);
+        kill(pid1, SIGUSR1);
     }
 }
 void reset(int signo2)
@@ -44,12 +48,9 @@ void reset(int signo2)
         fgets(line1, 10, cmd1);
         fgets(line2, 10, cmd2);
         fgets(line3, 10, cmd3);
-        long pid1 = 0;
-        long pid2 = 0;
-        long pid3 = 0;
-        pid1 = strtoul(line1, NULL, 10);
-        pid2 = strtoul(line2, NULL, 10);
-        pid3 = strtoul(line3, NULL, 10);
+        long pid1 = strtoul(line1, NULL, 10);
+        long pid2 = strtoul(line2, NULL, 10);
+        long pid3 = strtoul(line3, NULL, 10);
         kill(pid3, SIGUSR2);
         kill(pid1, SIGUSR2);
         kill(pid2, SIGUSR2);
