@@ -2,6 +2,7 @@
     "files.associations": {
         "stdlib.h": "c",
         "stat.h": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "wait.h": "c"
     }
 }

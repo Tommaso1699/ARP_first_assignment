@@ -10,11 +10,20 @@
 #include<signal.h>
 float vx = 0.0 ;
 float vz = 0.0;
-void stop(int signo){
-    if(signo==SIGUSR1){
+int flag = 0;
+//void stop(int signo){
+   // if(signo==SIGUSR1){
+ //       fflush(stdout);
+   //    vx = 0.0;
+   //     vz = 0.0;
+   // }
+//}
+void reset(int signo){
+    if(signo==SIGUSR2){
         fflush(stdout);
-       vx = 0.0;
+        vx = 0.0;
         vz = 0.0;
+        flag =1;
     }
 }
 int main(int argc, char const *argv[])
@@ -36,7 +45,7 @@ int main(int argc, char const *argv[])
 
     // Initialize User Interface 
     init_console_ui();
-     if (signal(SIGUSR1, stop) == SIG_ERR)
+     if (signal(SIGUSR2, reset) == SIG_ERR)
         printf("\ncan't catch SIGINT\n");
     // Infinite loop
     while(TRUE)
@@ -53,6 +62,10 @@ int main(int argc, char const *argv[])
             write(motor_z,arr2,strlen(arr2 +1));
             close(motor_z);
             usleep(20000);
+            if(flag ==1){
+                    vx = vx  - 0.1;
+                    vz = vz  - 0.1;
+                }
         // Get mouse/resize commands in non-blocking mode...
         int cmd = getch();
         // If user resizes screen, re-draw UI

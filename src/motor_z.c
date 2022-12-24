@@ -6,6 +6,13 @@
 #include<string.h>
 #include<fcntl.h>
 #include<sys/stat.h>
+float position =0.0;
+int flag =0;
+void reset(int signo){
+    if(signo==SIGUSR2){
+       flag =1;
+    }
+}
 int main(int argc, char const *argv[])
 {
     FILE *motorz; //creating variable
@@ -15,7 +22,7 @@ int main(int argc, char const *argv[])
     //fclose(motorz); //closing log file
     char vz [50] ; //creating array
     float vzz = 0.0; //creating variable
-    float position =0.0; //creating variable
+     //creating variable
     float dt =  0.25; //creating variable
     int motor_z_1, motor_z_2; //creating variable
     char* motor_z_fifo = "/tmp/fifo_motor_z"; //creating variable
@@ -24,6 +31,8 @@ int main(int argc, char const *argv[])
     mkfifo(switch_motor_signals_fifo, 0666); //making a FIFO special file
     char arr1 [50]; //creating array
     char arr2[50] = "%f"; //creating array
+     if (signal(SIGUSR2, reset) == SIG_ERR)
+        printf("\ncan't catch SIGINT\n");
     while((1)){ //while loop
     usleep(20000); //suspend execution for microsecond intervals
     motor_z_1= open(motor_z_fifo, O_RDONLY); //opening FIFO

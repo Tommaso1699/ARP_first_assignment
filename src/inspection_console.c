@@ -10,42 +10,50 @@
 #include<signal.h>
 float ee_x = 0.0;
 float ee_y = 0.0;
+long interrupt(const char* process){
+        char arr[10];
+        char* str = "pidof -s ";
+        strcpy(str,process);
+        const char*cmd = str;
+        FILE * command = popen(cmd, "r");
+        fgets(arr, 10, command);
+        pid_t pid = strtoul(arr, NULL, 10);
+        pclose(command);
+        return pid;
+
+}
 void stop(int signo1)
 {
     if (signo1 == SIGUSR1)
     {
-        // printf("Signal received, exiting");
         fflush(stdout);
-        char line[10];
-        FILE *cmd = popen("pidof -s command", "r");
-        fgets(line, 10, cmd);
-        long pid = 0;
-        pid = strtoul(line, NULL, 10);
-
-        kill(pid, SIGUSR1);
+        kill(interrupt("command"), SIGUSR1);
+        
     }
 }
 void reset(int signo2)
 {
-    if (signo2 == SIGUSR1)
+    if (signo2 == SIGUSR2)
     {
-        // printf("Signal received, exiting");
-        fflush(stdout);
+         fflush(stdout);
         char line1[10];
         char line2[10];
+        char line3[10];
+         FILE *cmd3 = popen("pidof -s command", "r");
         FILE *cmd1 = popen("pidof -s motor_x", "r");
         FILE *cmd2 = popen("pidof -s motor_z", "r");
         fgets(line1, 10, cmd1);
         fgets(line2, 10, cmd2);
+        fgets(line3, 10, cmd3);
         long pid1 = 0;
         long pid2 = 0;
+        long pid3 =0;
         pid1 = strtoul(line1, NULL, 10);
         pid2 = strtoul(line2, NULL, 10);
-        ee_x = 0.0;
-        ee_y = 0.0;
-        update_console_ui(&ee_x, &ee_y);
-        kill(pid1, SIGUSR1);
-        kill(pid2, SIGUSR1);
+        pid3 = strtoul(line3, NULL, 10);
+        kill(pid3, SIGUSR2);
+        kill(pid1, SIGUSR2);
+        kill(pid2, SIGUSR2);
     }
 }
 int main(int argc, char const *argv[])
@@ -104,9 +112,9 @@ int main(int argc, char const *argv[])
 
                 // RESET button pressed
                 else if(check_button_pressed(rst_button, &event)) {
-                       if (signal(SIGUSR1, reset) == SIG_ERR)
+                       if (signal(SIGUSR2, reset) == SIG_ERR)
                         printf("\ncan't catch SIGINT\n");
-                    kill(getpid(), SIGUSR1);
+                    kill(getpid(), SIGUSR2);
                     
                 }
             }
