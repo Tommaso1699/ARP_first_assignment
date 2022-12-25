@@ -6,7 +6,7 @@
 #include<string.h>
 #include<fcntl.h>
 #include<sys/stat.h>
-int random(int x, int y) //generate random number
+int random_func(int x, int y) //generate random number
 {
     int number = (rand()%(y-x+1))+x;
     return number;
@@ -39,7 +39,7 @@ while(1){ //infinite loop
     int choose = select(stream +1, &fds, NULL, NULL, NULL); //monitor multiple file descriptors, waiting until one or more of the file descriptors become ready"
     switch(choose){ //switch case
         case 2: //if both FIFO are sending data, choose randomly first
-        int rand_num = random(0,1);
+        int rand_num = random_func(0,1);
         if(rand_num == 0){
             read(motorz,arr2,80);
             sscanf(arr2,arr3,&y);
@@ -60,7 +60,7 @@ while(1){ //infinite loop
         if(FD_ISSET(motorx,&fds)!=0){
             fflush(stdout);
             read(motorx,arr2,80);
-            sscanf(arr1,arr3,&x);
+            sscanf(arr2,arr3,&x);
             close(motorx);
             close(motorz);
 
@@ -78,7 +78,6 @@ while(1){ //infinite loop
         perror("Error");
         break;
     }
-    //printf("posx:%f,posy:%f\n", x, y);
     update_ui = open(updateui,O_RDWR); // opening FIFO
     sprintf(position, arr4, x, y); // content of x and y is stored as a C string in the position
     write(update_ui, position, strlen(position)+1); // writing from position to update_ui

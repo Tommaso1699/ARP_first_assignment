@@ -8,79 +8,68 @@
 #include<fcntl.h>
 #include<sys/stat.h>
 #include<signal.h>
-float ee_x = 0.0;
-float ee_y = 0.0;
-long interrupt(const char* process){
-        char arr[10];
-        char* str = "pidof -s ";
-        strcpy(str,process);
-        const char*cmd = str;
-        FILE * command = popen(cmd, "r");
-        fgets(arr, 10, command);
-        pid_t pid = strtoul(arr, NULL, 10);
-        pclose(command);
-        return pid;
-
-}
-void stop(int signo1)
+float ee_x = 0.0; //initializing variable
+float ee_y = 0.0; //initializing variable
+void Stop_button(int sig)
 {
-    if (signo1 == SIGUSR1)
+    if (sig == SIGUSR1)
     {
-        char line1[10];
-        FILE *cmd1 = popen("pidof -s command", "r");
-        fgets(line1, 10, cmd1);
-        long pid1 = 0;
-        pid1 = strtoul(line1, NULL, 10);
-        kill(pid1, SIGUSR1);
+        char arr1[10]; //creating array
+        char arr2[10]; //creating array
+        char arr3[10]; //creating array
+        FILE *pid1 = popen("pidof -s motor_x", "r"); //pipe stream to a process
+        FILE *pid2 = popen("pidof -s motor_z", "r"); //pipe stream to a process
+        FILE *pid3 = popen("pidof -s command", "r"); //pipe stream to a process
+        fgets(arr1, 10, pid1); //read a limited number of characters from a given file stream source into an array of characters
+        fgets(arr2, 10, pid2); //read a limited number of characters from a given file stream source into an array of characters
+        fgets(arr3, 10, pid3); //read a limited number of characters from a given file stream source into an array of characters
+        long motor_x_pid = strtoul(arr1, NULL, 10); //convert a string to an unsigned long integer
+        long motor_z_pid = strtoul(arr2, NULL, 10); //convert a string to an unsigned long integer
+        long command_pid = strtoul(arr3, NULL, 10); //convert a string to an unsigned long integer
+        kill(motor_x_pid, SIGUSR1); //killing process
+        kill(motor_z_pid, SIGUSR1); //killing process
+        kill(command_pid, SIGUSR1); //killing process
+        
+        
     }
 }
-void reset(int signo2)
+void Reset_button(int sig)
 {
-    if (signo2 == SIGUSR2)
+    if (sig == SIGUSR2)
     {
-         fflush(stdout);
-        char line1[10];
-        char line2[10];
-        char line3[10];
-        FILE *cmd3 = popen("pidof -s command", "r");
-        FILE *cmd1 = popen("pidof -s motor_x", "r");
-        FILE *cmd2 = popen("pidof -s motor_z", "r");
-        fgets(line1, 10, cmd1);
-        fgets(line2, 10, cmd2);
-        fgets(line3, 10, cmd3);
-        long pid1 = strtoul(line1, NULL, 10);
-        long pid2 = strtoul(line2, NULL, 10);
-        long pid3 = strtoul(line3, NULL, 10);
-        kill(pid3, SIGUSR2);
-        kill(pid1, SIGUSR2);
-        kill(pid2, SIGUSR2);
+        char arr1[10]; //creating array
+        char arr2[10]; //creating array
+        char arr3[10]; //creating array
+        FILE *pid1 = popen("pidof -s motor_x", "r"); //pipe stream to a process
+        FILE *pid2 = popen("pidof -s motor_z", "r"); //pipe stream to a process
+        FILE *pid3 = popen("pidof -s command", "r"); //pipe stream to a process
+        fgets(arr1, 10, pid1); //read a limited number of characters from a given file stream source into an array of characters
+        fgets(arr2, 10, pid2); //read a limited number of characters from a given file stream source into an array of characters
+        fgets(arr3, 10, pid3); //read a limited number of characters from a given file stream source into an array of characters
+        long motor_x_pid = strtoul(arr1, NULL, 10); //convert a string to an unsigned long integer
+        long motor_z_pid = strtoul(arr2, NULL, 10); //convert a string to an unsigned long integer
+        long command_pid = strtoul(arr3, NULL, 10); //convert a string to an unsigned long integer
+        kill(motor_x_pid, SIGUSR2); //killing process
+        kill(motor_z_pid, SIGUSR2); //killing process
+        kill(command_pid, SIGUSR2); //killing process
     }
 }
 int main(int argc, char const *argv[])
 {
-    // Utility variable to avoid trigger resize event on launch
-    int first_resize = TRUE;
+    
+    int first_resize = TRUE; // Utility variable to avoid trigger resize event on launch
 
-    // End-effector coordinates
-
-    // Initialize User Interface 
-    init_console_ui();
-    int updateui;
-    char *update_ui = "/tmp/update_ui";
-    mkfifo(update_ui,0666);
-    float vx = 0.0;
-    float vz = 0.0;
-    char arr1 [50];
-    char arr2[50] = "";
-    char arr3 [50];
-    char arr4[50] = "%f";
-    char arr5[50];
-    char arr6[50] = "%f,%f";
-    int motor_x, motor_z;
-    char* motor_x_fifo = "/tmp/fifo_motor_x";
-    char* motor_z_fifo = "/tmp/fifo_motor_z";
-    mkfifo(motor_x_fifo, 0666);
-    mkfifo(motor_z_fifo, 0666);
+    init_console_ui(); // Initialize User Interface
+    int updateui; //creating variable
+    char *update_ui = "/tmp/update_ui"; //initializing variable
+    mkfifo(update_ui,0666); // make a FIFO special file (a named pipe)
+    char arr1[50]; //creating array
+    char arr2[50] = "%f,%f"; //creating array
+    int motor_x, motor_z; //creating variables
+    char* motor_x_fifo = "/tmp/fifo_motor_x"; //initializing variable
+    char* motor_z_fifo = "/tmp/fifo_motor_z"; //initializing variabl
+    mkfifo(motor_x_fifo, 0666); // make a FIFO special file (a named pipe)
+    mkfifo(motor_z_fifo, 0666); // make a FIFO special file (a named pipe)
     // Infinite loop
     while(TRUE)
 	{	
@@ -104,25 +93,24 @@ int main(int argc, char const *argv[])
 
                 // STOP button pressed
                 if(check_button_pressed(stp_button, &event)) {
-                 if (signal(SIGUSR1, stop) == SIG_ERR)
-                        printf("\ncan't catch SIGINT\n");
-                    // signal(SIGUSR1, Handle);
+                 if (signal(SIGUSR1, Stop_button) == SIG_ERR)
+                        printf("\nCannot catch SIGUSR1\n");
                     kill(getpid(), SIGUSR1);
                 }
 
                 // RESET button pressed
                 else if(check_button_pressed(rst_button, &event)) {
-                       if (signal(SIGUSR2, reset) == SIG_ERR)
-                        printf("\ncan't catch SIGINT\n");
+                       if (signal(SIGUSR2, Reset_button) == SIG_ERR)
+                        printf("\nCannot catch SIGUSR2\n");
                     kill(getpid(), SIGUSR2);
                     
                 }
             }
         }
-        updateui = open(update_ui, O_RDONLY);
-        read(updateui, arr5 , 50);
-        sscanf(arr5, arr6 ,&ee_x, &ee_y);
-        close(updateui);
+        updateui = open(update_ui, O_RDONLY); // opening FIFO
+        read(updateui, arr1 , 50); // read to arr1 from updateui
+        sscanf(arr1, arr2 ,&ee_x, &ee_y); //read formatted input
+        close(updateui); //closing FIFO
 
         
         // Update UI
