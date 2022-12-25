@@ -22,10 +22,10 @@ int logging(char* log)
 {
     char array[200];
     char *inspection = "/tmp/inspection";
-    int fd_log = open(inspection, O_WRONLY);
+    int fd_log = open(inspection, O_RDWR);
     memset(array, 0, sizeof(array));
-    sprintf(array, "%ld; %d; %s\n", time(NULL), getpid(), log);
-    write(fd_log, array, strlen(array));
+    sprintf(array, "%ld;%s;%s", time(NULL), "motor_z", log);
+    write(fd_log, array, strlen(array)+1);
     close(fd_log);
 }
 

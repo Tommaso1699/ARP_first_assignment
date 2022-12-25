@@ -1,0 +1,1288 @@
+Time: 1672011839, Process: motor_x, Log message: motor_x
+Time: 1672011839, Process: motor_z, Log message: motor_z
+Time: 1672011839, Process: command, Log message: no update
+Time: 1672011839, Process: motor_x, Log message: motor_x
+Time: 1672011839, Process: motor_z, Log message: motor_z
+Time: 1672011839, Process: command, Log message: no update
+Time: 1672011839, Process: motor_z, Log message: motor_z
+Time: 1672011839, Process: command, Log message: no update
+Time: 1672011839, Process: motor_z, Log message: motor_z
+Time: 1672011839, Process: command, Log message: no update
+Time: 1672011839, Process: motor_x, Log message: motor_x
+Time: 1672011839, Process: motor_z, Log message: motor_z
+Time: 1672011839, Process: command, Log message: no update
+Time: 1672011839, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x1672011840
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update1672011840
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_x, Log message: motor_x
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011840, Process: command, Log message: no update
+Time: 1672011840, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update1672011841
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update1672011841
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x1672011841
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x1672011841
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011841, Process: command, Log message: no update
+Time: 1672011841, Process: motor_x, Log message: motor_x
+Time: 1672011841, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x1672011842
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011842, Process: command, Log message: no update
+Time: 1672011842, Process: motor_x, Log message: motor_x
+Time: 1672011842, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x1672011843
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011843, Process: motor_z, Log message: motor_z
+Time: 1672011843, Process: command, Log message: no update
+Time: 1672011843, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: inspection, Log message: resize screen
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x1672011844
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update1672011844
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_z, Log message: motor_z
+Time: 1672011844, Process: command, Log message: no update
+Time: 1672011844, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: motor_x, Log message: motor_x1672011845
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_x, Log message: motor_x1672011845
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: motor_x, Log message: motor_x
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011845, Process: command, Log message: no update
+Time: 1672011845, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update1672011846
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update1672011846
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x1672011846
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x1672011846
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011846, Process: command, Log message: no update
+Time: 1672011846, Process: motor_x, Log message: motor_x
+Time: 1672011846, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x1672011847
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x1672011847
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: resize screen
+Time: 1672011847, Process: command, Log message: resize screen
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: resize screen
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: resize screen
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: resize screen
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x1672011847
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011847, Process: motor_z, Log message: motor_z
+Time: 1672011847, Process: command, Log message: no update
+Time: 1672011847, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: Vx increase button pressed
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x1672011848
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011848, Process: command, Log message: no update
+Time: 1672011848, Process: motor_x, Log message: motor_x
+Time: 1672011848, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: Vz increase button pressed1672011849
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x1672011849
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update1672011849
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update1672011849
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x1672011849
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011849, Process: command, Log message: no update
+Time: 1672011849, Process: motor_x, Log message: motor_x
+Time: 1672011849, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update1672011850
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011850, Process: command, Log message: no update
+Time: 1672011850, Process: motor_x, Log message: motor_x
+Time: 1672011850, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: inspection, Log message: STOP button pressed
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_z, Log message: motor_z
+Time: 1672011851, Process: command, Log message: no update
+Time: 1672011851, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x1672011852
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011852, Process: motor_z, Log message: motor_z
+Time: 1672011852, Process: command, Log message: no update
+Time: 1672011852, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x1672011853
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011853, Process: motor_z, Log message: motor_z
+Time: 1672011853, Process: command, Log message: no update
+Time: 1672011853, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: inspection, Log message: RESET button pressed
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x1672011854
+Time: 1672011854, Process: inspection, Log message: 1672011854
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x1672011854
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011854, Process: motor_z, Log message: motor_z
+Time: 1672011854, Process: command, Log message: no update
+Time: 1672011854, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x1672011855
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011855, Process: motor_z, Log message: motor_z
+Time: 1672011855, Process: command, Log message: no update
+Time: 1672011855, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update1672011856
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x1672011856
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011856, Process: motor_z, Log message: motor_z
+Time: 1672011856, Process: command, Log message: no update
+Time: 1672011856, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x1672011857
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: Vx increase button pressed
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x1672011857
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011857, Process: motor_z, Log message: motor_z
+Time: 1672011857, Process: command, Log message: no update
+Time: 1672011857, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x1672011858
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011858, Process: motor_z, Log message: motor_z
+Time: 1672011858, Process: command, Log message: no update
+Time: 1672011858, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x1672011859
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x
+Time: 1672011859, Process: motor_z, Log message: motor_z
+Time: 1672011859, Process: command, Log message: no update
+Time: 1672011859, Process: motor_x, Log message: motor_x

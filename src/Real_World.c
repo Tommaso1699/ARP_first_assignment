@@ -14,6 +14,17 @@ int generate_random(int l, int r)
     return rand_num;
 }
 
+int logging(char *log)
+{
+    char array[200];
+    char *inspection = "/tmp/inspection";
+    int fd_log = open(inspection, O_RDWR);
+    memset(array, 0, sizeof(array));
+    sprintf(array, "%ld;%s;%s", time(NULL), "real_world", log);
+    write(fd_log, array, strlen(array));
+    close(fd_log);
+}
+
 int main(int argc, char const *argv[])
 {
     char *motor_x = "/tmp/fifo_motor_x_to_switching_motor_signals";
@@ -56,6 +67,7 @@ int main(int argc, char const *argv[])
         {
         case -1:
             perror("select()");
+            logging("select error");
             return -1;
         case 0:
             // no data received
@@ -102,6 +114,7 @@ int main(int argc, char const *argv[])
             break;
         }
         //  printf("posx:%f,posy:%f\n", posx, posy);
+        logging("");
         update_ui = open(updateui, O_RDWR);
         sprintf(realpos, "%f,%f", posx, posy);
         write(update_ui, realpos, strlen(realpos) + 1);

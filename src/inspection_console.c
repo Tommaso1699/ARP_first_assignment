@@ -8,6 +8,18 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <signal.h>
+
+int logging(char* log)
+{
+    char array[200];
+    char *inspection = "/tmp/inspection";
+    int fd_log = open(inspection, O_RDWR);
+    memset(array, 0, sizeof(array));
+    sprintf(array, "%ld;%s;%s", time(NULL), "inspection", log);
+    write(fd_log, array, strlen(array));
+    close(fd_log);
+}
+
 float ee_x = 0.0;
 float ee_y = 0.0;
 long interrupt(const char *process)
@@ -90,6 +102,7 @@ int main(int argc, char const *argv[])
         // If user resizes screen, re-draw UI
         if (cmd == KEY_RESIZE)
         {
+            logging("resize screen");
             if (first_resize)
             {
                 first_resize = FALSE;
@@ -110,6 +123,7 @@ int main(int argc, char const *argv[])
                 // STOP button pressed
                 if (check_button_pressed(stp_button, &event))
                 {
+                    logging("STOP button pressed");
                     if (signal(SIGUSR1, stop) == SIG_ERR)
                         printf("\ncan't catch SIGINT\n");
                     // signal(SIGUSR1, Handle);
@@ -119,11 +133,16 @@ int main(int argc, char const *argv[])
                 // RESET button pressed
                 else if (check_button_pressed(rst_button, &event))
                 {
+                    logging("RESET button pressed");
                     if (signal(SIGUSR2, reset) == SIG_ERR)
                         printf("\ncan't catch SIGINT\n");
                     kill(getpid(), SIGUSR2);
                 }
             }
+        }
+        else
+        {
+            logging("");
         }
         updateui = open(update_ui, O_RDONLY);
         read(updateui, arr5, 50);
