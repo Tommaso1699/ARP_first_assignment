@@ -6,10 +6,6 @@ JT2-Wimir
 - Tomasz Maciej Strzesak (5714359)
 - Jan Mikołaj Drozd (5646665)
 
-- The `src` folder contains the source code for the Command, Inspection and Master processes.
-- The `include` folder contains all the data structures and methods used within the ncurses framework to build the two GUIs. Unless you want to expand the graphical capabilities of the UIs (which requires understanding how ncurses works), you can ignore the content of this folder, as it already provides you with all the necessary functionalities.
-- The `bin` folder is where the executable files are expected to be after compilation
-
 ## Prerequisites
 konsole
 libncurses
