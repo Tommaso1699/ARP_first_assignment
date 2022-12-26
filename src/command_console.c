@@ -8,6 +8,8 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 #include <signal.h>
+#include <time.h>
+
 float number_x = 0.0; // initializing variable
 float number_z = 0.0; // initializing variable
 void Stop_button(int sig)
@@ -26,7 +28,19 @@ void Reset_button(int sig)
         number_z = 2.0;
     }
 }
-int main(int argc, char const *argv[]) // main
+
+int logging(char *log)
+{
+    char array[200];
+    char *inspection = "/tmp/inspection";
+    int fd_log = open(inspection, O_RDWR);
+    memset(array, 0, sizeof(array));
+    sprintf(array, "%ld;%s;%s", time(NULL), "command", log);
+    write(fd_log, array, strlen(array) + 1);
+    close(fd_log);
+}
+
+int main(int argc, char const *argv[])
 {
     FILE *command_console; // creating variable
     // command_console = fopen("command_console.log", "w"); //creating log file
@@ -80,6 +94,7 @@ int main(int argc, char const *argv[]) // main
             {
                 reset_console_ui();
             }
+            logging("resize screen");
         }
 
         else if (cmd == KEY_MOUSE)
@@ -95,6 +110,7 @@ int main(int argc, char const *argv[]) // main
                     // fprintf(command_console, "Vx increase button pressed\n");
                     // fflush(command_console);
                     // fclose(command_console);
+                    logging("Vx increase button pressed");
                 }
 
                 else if (check_button_pressed(vx_decr_btn, &event))
@@ -103,14 +119,17 @@ int main(int argc, char const *argv[]) // main
                     // fprintf(command_console, "Vx decrease button pressed\n");
                     // fflush(command_console);
                     // fclose(command_console);
+                    logging("Vx decrease button pressed");
                 }
 
+                // Vx stop button pressed
                 else if (check_button_pressed(vx_stp_button, &event))
-                { // Vx stop button pressed
+                {
                     number_x = 3.0;
                     // fprintf(command_console, "Vx stop button pressed\n");
                     // fflush(command_console);
                     // fclose(command_console);
+                    logging("Vx stop button pressed");
                 }
 
                 else if (check_button_pressed(vz_incr_btn, &event))
@@ -120,6 +139,7 @@ int main(int argc, char const *argv[]) // main
                     // fprintf(command_console, "Vz increase button pressed\n");
                     // fflush(command_console);
                     // fclose(command_console);
+                    logging("Vz increase button pressed");
                 }
 
                 else if (check_button_pressed(vz_decr_btn, &event))
@@ -129,6 +149,7 @@ int main(int argc, char const *argv[]) // main
                     // fprintf(command_console, "Vz decrease button pressed\n");
                     // fflush(command_console);
                     // fclose(command_console);
+                    logging("Vz decrease button pressed");
                 }
 
                 else if (check_button_pressed(vz_stp_button, &event))
@@ -137,12 +158,16 @@ int main(int argc, char const *argv[]) // main
                     // fprintf(command_console, "Vz stop button pressed\n");
                     // fflush(command_console);
                     // fclose(command_console);
+                    logging("Vz stop button pressed");
                 }
             }
         }
+        else
+        {
+            logging("");
+        }
 
         refresh();
-        
     }
 
     endwin(); // Terminate
