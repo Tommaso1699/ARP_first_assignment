@@ -8,7 +8,7 @@
 #include <sys/stat.h>
 #include <string.h>
 
-#define PROCESS_TIMEOUT 15 // timeout in seconds
+#define PROCESS_TIMEOUT 60 // timeout in seconds
 #define array_len(a) sizeof(a) / sizeof(a[0])
 
 FILE *logfile;
@@ -16,11 +16,11 @@ char *inspection = "/tmp/inspection";
 
 typedef struct
 {
-  char *path;
-  char *arg_list[4];
-  char *process_name;
-  pid_t pid;
-  time_t timestamp;
+  char *path;         // path to executables
+  char *arg_list[4];  // cli arguments
+  char *process_name; // name of the process
+  pid_t pid;          // pid
+  time_t timestamp;   // time of the last update from the process
 } processInfo;
 
 processInfo process_list[] = {
@@ -28,8 +28,7 @@ processInfo process_list[] = {
     {"/usr/bin/konsole", {"/usr/bin/konsole", "-e", "./bin/command", NULL}, "command", 0, 0},
     {"./bin/motor_x", {"", "", "", NULL}, "motor_x", 0, 0},
     {"./bin/motor_z", {"", "", "", NULL}, "motor_z", 0, 0},
-    {"./bin/select_motor_signals", {"", "", "", NULL}, "select_motor_signals", 0, 0}
-};
+    {"./bin/select_motor_signals", {"", "", "", NULL}, "select_motor_signals", 0, 0}};
 
 int spawn(const char *program, char *arg_list[])
 {
@@ -60,6 +59,7 @@ int spawn(const char *program, char *arg_list[])
 
 int start(processInfo *process_list, int size)
 {
+  // starting processes defined in process_list
   for (int i = 0; i < size; i++)
   {
     printf("%s\n", process_list[i].arg_list[0]);
@@ -77,6 +77,7 @@ int start(processInfo *process_list, int size)
 
 int stop(processInfo *process_list, int size)
 {
+  // killing processes
   printf("stop %d\n", getpid());
   for (int i = 0; i < size; i++)
   {
@@ -100,9 +101,9 @@ void exit_handle(int signo)
 {
   if (signo == SIGINT)
   {
-    stop(process_list, array_len(process_list));
-    unlink(inspection);
-    fclose(logfile);
+    stop(process_list, array_len(process_list)); // killing all created processes
+    unlink(inspection);                          // unlinking FIFO
+    fclose(logfile);                             // closing logfile
   }
 }
 
@@ -114,15 +115,15 @@ int check_timeout(processInfo *process_list, int size)
   {
     if (process_list[i].pid > 0)
     {
-      if (difftime(now, process_list[i].timestamp) >= PROCESS_TIMEOUT)
+      if (difftime(now, process_list[i].timestamp) >= PROCESS_TIMEOUT) // if time from last update of the process was greater or equal PROCESS_TIMEOUT
       {
         // printf("%d, timeout\n", process_list[i].pid);
-        kill(process_list[i].pid, SIGKILL);
+        kill(process_list[i].pid, SIGKILL); // kill the process
         int status;
-        waitpid(process_list[i].pid, &status, 0);
+        waitpid(process_list[i].pid, &status, 0); // wait for process to be killed
         printf("%d, status: %d\n", process_list[i].pid, status);
         // restart process
-        start(process_list + i, 1);
+        start(process_list + i, 1); // restart the process
       }
       else
       {
@@ -150,6 +151,7 @@ int update_timeout(processInfo *process_list, int size, char *msg_name, time_t m
 
 int msg_handler(char *buff)
 {
+  //parse data from the buff
   time_t msg_time;
   char msg_name[20];
   char msg_log[200];
@@ -182,7 +184,7 @@ int msg_handler(char *buff)
   if (strlen(msg_log) > 0)
   {
     // printf("write to log: %s\n", msg_log);
-    fprintf(logfile, "Time: %ld, Process: %s, Log message: %s\n", msg_time, msg_name, msg_log);
+    fprintf(logfile, "Time: %ld, Process: %s, Log message: %s\n", msg_time, msg_name, msg_log); // adding log msg to logfile
     fflush(logfile);
   }
 
@@ -198,10 +200,9 @@ int main()
   start(process_list, array_len(process_list));
   mkfifo(inspection, 0666);
   char array[300];
-  // logfile = fopen("logs.log", "a+");
-  logfile = fopen("logs.log", "w+");
+  // logfile = fopen("logs.log", "a+"); // opening or creating logfile to append new logs
+  logfile = fopen("logs.log", "w+"); // creating logifle to write new logs
 
-  // printf("aaa\n");
   while (1)
   {
     fd_inspection = open(inspection, O_RDWR);
@@ -225,13 +226,12 @@ int main()
     default:
       memset(array, 0, sizeof(array));
       int r = read(fd_inspection, array, 300);
-      if (r > 0)
+      if (r > 0) // if there is a new message in the pipe
       {
         // printf("Inspection: %d [%s]\n", r, array);
         msg_handler(array);
       }
       check_timeout(process_list, array_len(process_list));
-
       break;
     }
     close(fd_inspection);
