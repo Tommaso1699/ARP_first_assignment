@@ -1,0 +1,8 @@
+# ignore binaries
+bin/
+
+#ignore logs
+*.log
+
+#
+Real_World.c

@@ -27,9 +27,8 @@ processInfo process_list[] = {
     {"/usr/bin/konsole", {"/usr/bin/konsole", "-e", "./bin/inspection", NULL}, "inspection", 0, 0},
     {"/usr/bin/konsole", {"/usr/bin/konsole", "-e", "./bin/command", NULL}, "command", 0, 0},
     {"./bin/motor_x", {"", "", "", NULL}, "motor_x", 0, 0},
-    {"./bin/motor_z", {"", "", "", NULL}, "motor_z", 0, 0}/*,
-    {"./bin/real_world", {"", "", "", NULL}, "real_world", 0, 0}};
-*/
+    {"./bin/motor_z", {"", "", "", NULL}, "motor_z", 0, 0},
+    {"./bin/select_motor_signals", {"", "", "", NULL}, "select_motor_signals", 0, 0}
 };
 
 int spawn(const char *program, char *arg_list[])
@@ -97,7 +96,7 @@ int stop(processInfo *process_list, int size)
   return 0;
 }
 
-void hoist_exit(int signo)
+void exit_handle(int signo)
 {
   if (signo == SIGINT)
   {
@@ -199,8 +198,8 @@ int main()
   start(process_list, array_len(process_list));
   mkfifo(inspection, 0666);
   char array[300];
-  // logfile = fopen("logs.txt", "a+");
-  logfile = fopen("logs.txt", "w+");
+  // logfile = fopen("logs.log", "a+");
+  logfile = fopen("logs.log", "w+");
 
   // printf("aaa\n");
   while (1)
@@ -238,6 +237,6 @@ int main()
     close(fd_inspection);
   }
 
-  hoist_exit(6);
+  exit_handle(6);
   return 0;
 }

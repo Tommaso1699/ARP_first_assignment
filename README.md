@@ -12,24 +12,19 @@ sudo apt-get install libncurses-dev
 ```
 
 ## Compiling and running the code
-The Command and Inspection processes depend on the ncurses library, which needs to be linked during the compilation step. Furthermore, the Inspection process also uses the mathematical library for some additional computation. Therefore the steps to compile are the following:
-1. for the **Inspection process**:
+To compile the program:
 	```console
-	gcc src/inspection_console.c -lncurses -lm -o bin/inspection
+	./compile.sh
 	```
-2. for the **Command process**:
+
+To run the program:
 	```console
-	gcc src/command_console.c -lncurses -o bin/command
+	./run.sh
 	```
-3. for the **Master process**:
+	or
 	```console
-	gcc src/master.c -o bin/master
+	./bin/master
 	```
-	
-After compiling, **assuming you have Konsole installed in your system** as per the professor's indications, you can **simply run the Master executable**, which will be responsible of spawning the two GUIs:
-```console
-./bin/master
-```
 
 ## Troubleshooting
 

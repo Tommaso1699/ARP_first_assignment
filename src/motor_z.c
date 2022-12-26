@@ -15,6 +15,7 @@ float speed_z = 0.0;      // initializing variable
 int flag = 0;             // initializing variable
 int flag2 = 0;            // initializing variable
 float error = 0.00000005; // fake error
+
 void Reset_button(int sig)
 { // function that is activating after receiving signal
     if (sig == SIGUSR2)
@@ -22,6 +23,7 @@ void Reset_button(int sig)
         flag = 1;
     }
 }
+
 void Stop_button(int sig)
 { // function that is activating after receiving signal
     if (sig == SIGUSR1)
