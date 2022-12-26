@@ -127,7 +127,7 @@ int check_timeout(processInfo *process_list, int size)
       }
       else
       {
-        printf("%d: %s: %f\n", process_list[i].pid, process_list[i].process_name, difftime(now, process_list[i].timestamp));
+        printf("%d: %s: Last activity: %fs ago\n", process_list[i].pid, process_list[i].process_name, difftime(now, process_list[i].timestamp));
       }
     }
   }
